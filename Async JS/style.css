@@ -1,0 +1,23 @@
+body {
+    background-color: darkslategrey;
+}
+
+.card-header {
+    background-color: blueviolet;
+    font-size: 32px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.card-body {
+    background-color: dimgrey;
+}
+
+.card-body img {
+    width: 500px;
+    height: 300px;
+}
+
+.card, .card2 {
+    display: none;
+}
