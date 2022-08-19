@@ -1,0 +1,33 @@
+.container {
+    width: 1000px;
+    margin: 100px auto;
+}
+
+#box {
+    position: relative;
+    width: 1000px;
+    height: 50px;
+    padding: 10px;
+    background-color: skyblue;
+    border: 1px solid #000;
+}
+
+#ball {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: green;
+}
+
+.btn-container {
+    margin-top: 40px;
+    padding: 30px;
+}
+
+button {
+    width: 100px;
+    height: 50px;
+    background-color: aqua;
+    margin-right: 40px;
+}
