@@ -20,3 +20,7 @@ Build 15 JavaScript Projects - Vanilla JavaScript Course
 
 _________________________________________________________________________________________________________________________________________________________________________
 
+Vanilla JavaScript with APIs - Projects
+
+1.Async (Show Countries Informations)<br />
+&nbsp; API : https://restcountries.com/v2/all <br />
