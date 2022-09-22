@@ -24,3 +24,6 @@ Vanilla JavaScript with APIs - Projects
 
 1.Async (Show Countries Informations)<br />
 &nbsp; API : https://restcountries.com/v2/all <br />
+
+2.YES-NO API with Vanilla JavaScript <br />
+&nbsp; API : https://yesno.wtf/api <br />
