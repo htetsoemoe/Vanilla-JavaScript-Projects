@@ -27,3 +27,10 @@ Vanilla JavaScript with APIs - Projects
 
 2.YES-NO API with Vanilla JavaScript <br />
 &nbsp; API : https://yesno.wtf/api <br />
+
+3.Module 1 - Using fetch() <br />
+&nbsp; 01.fetch_image <br />
+&nbsp; 01.fetch_exericse_text <br />
+&nbsp; 01.fetch_exercise_array <br />
+&nbsp; 02.fetch_csv <br />
+
