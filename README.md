@@ -18,7 +18,7 @@ Build 15 JavaScript Projects - Vanilla JavaScript Course
 14.grocery-bud <br />
 15.slider <br />
 
-_________________________________________________________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________________________________________________________
 
 Vanilla JavaScript with APIs - Projects
 
@@ -32,5 +32,7 @@ Vanilla JavaScript with APIs - Projects
 &nbsp; 01.fetch_image <br />
 &nbsp; 01.fetch_exericse_text <br />
 &nbsp; 01.fetch_exercise_array <br />
-&nbsp; 02.fetch_csv <br />
+&nbsp; 02.fetch_csv <br /><br /><br />
+&nbsp; 03.graphing_data<br />
+&nbsp;&nbsp;Loading local CSV file to HTML canvas using fetch() and [Chart.js](https://www.jsdelivr.com/package/npm/chart.js).&nbsp;&nbsp;
 
