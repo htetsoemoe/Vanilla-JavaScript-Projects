@@ -35,7 +35,7 @@ Vanilla JavaScript with APIs - Projects
 &nbsp; 02.fetch_csv <br /><br />
 &nbsp; 03.graphing_data<br />
 &nbsp; 03.graphing_data_exercise_multiple_lines<br />
-&nbsp;&nbsp;Loading local CSV file to HTML canvas using fetch() and [Chart.js](https://www.jsdelivr.com/package/npm/chart.js).&nbsp;&nbsp;
+&nbsp;&nbsp;Loading local CSV file to HTML canvas using fetch() and [Chart.js](https://www.jsdelivr.com/package/npm/chart.js).<br /><br />
 &nbsp; 03.mapping_iss<br />
 &nbsp;&nbsp;Using [ISS Location API](https://wheretheiss.at/w/developer) with fetch( )<br /> 
-&nbsp:&nbsp;Loading ISS image on map and using [Leaflet](https://leafletjs.com/) an open-source JavaScript library for mobile-friendly interactive maps.<br />
+&nbsp;&nbsp;Loading ISS image on map and using [Leaflet](https://leafletjs.com/) an open-source JavaScript library for mobile-friendly interactive maps.<br />
