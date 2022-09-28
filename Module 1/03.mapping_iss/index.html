@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=\, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+    integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+
+  <script src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+    integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s=" crossorigin=""></script>
+
+  <style>
+    #issMap {
+      height: 180px;
+    }
+  </style>
+
+  <title>Fetch JSON from API and map lat lon</title>
+</head>
+
+<body>
+  <h1>Where is the ISS?</h1>
+
+  <p>
+    Latitude :&nbsp; <span id="lat"></span>°<br />
+    Longitude :&nbsp; <span id="lon"></span>°<br />
+    Latitude :&nbsp; <span id="alt"></span><br />
+    Velocity :&nbsp; <span id="velocity"></span><br />
+  </p>
+
+  <div id="issMap"></div>
+
+  <script>
+    // Making a map and tiles
+    const myMap = L.map('issMap').setView([0, 0], 1);
+    const attribution =
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+    const titleUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+    const tiles = L.tileLayer(titleUrl, { attribution });
+    tiles.addTo(myMap);
+
+    // Making a marker with a custom icon
+    const issIcon = L.icon({
+      iconUrl: 'iss200.png',
+      iconSize: [50, 32],
+      iconAnchor: [25, 16]
+    });
+
+    const marker = L.marker([0, 0], { icon: issIcon }).addTo(myMap);
+
+    const api_url = 'https://api.wheretheiss.at/v1/satellites/25544';
+
+    async function getISS() {
+      const response = await fetch(api_url);
+      const data = await response.json();
+      const { latitude, longitude, altitude, velocity } = data;
+
+      marker.setLatLng([latitude, longitude]);
+
+      document.getElementById('lat').textContent = latitude;
+      document.getElementById('lon').textContent = longitude;
+      document.getElementById('alt').textContent = altitude;
+      document.getElementById('velocity').textContent = velocity;
+    }
+
+    setInterval(getISS, 2000);
+  </script>
+</body>
+
+</html>
